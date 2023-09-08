@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical and Horizontal NavBar</title>
+    <style>
+      .menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      /* Style for the first navigation menu */
+      .menu1 ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid black;
+        background-color: lightseagreen;
+      }
+
+      .menu1 li {
+        float: left;
+      }
+
+      .menu1 li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .menu1 li a:hover:not(.active) {
+        background-color: gray;
+      }
+
+      .menu1 li a.active {
+        color: white;
+        background-color: darkgreen;
+      }
+
+      /* Style for the second navigation menu */
+      .menu2 ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        border: 1px solid #555;
+      }
+
+      .menu2 li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      .menu2 li {
+        text-align: center;
+        border-bottom: 1px solid #555;
+      }
+
+      .menu2 li:last-child {
+        border-bottom: none;
+      }
+
+      .menu2 li a.active {
+        background-color: darkgreen;
+        color: white;
+      }
+
+      .menu2 li a:hover:not(.active) {
+        background-color: darkgray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menu1">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#java">JAVA</a></li>
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#bs">BOOTSTRAP</a></li>
+          <li><a href="#js">JS</a></li>
+        </ul>
+      </div>
+
+      <div class="menu2">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#java">JAVA</a></li>
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#bs">BOOTSTRAP</a></li>
+          <li><a href="#js">JS</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

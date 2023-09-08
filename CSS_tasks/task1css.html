@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Borders</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      table {
+        width: 100%;
+        border: 2px solid black;
+      }
+
+      th,
+      td {
+        border: 2px solid black;
+        padding: 10px;
+        text-align: left;
+        border-radius: 75px;
+      }
+
+      th {
+        background-color: forestgreen;
+        color: Black;
+      }
+
+      td {
+        background-color: lightgreen;
+        color: Black;
+      }
+
+      .flex_item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #rcorners1 {
+        border-radius: 15px 50px 30px 5px;
+        border: 2px solid darkgreen;
+        padding: 20px;
+        width: 200px;
+        height: 100px;
+      }
+
+      #rcorners2 {
+        border-radius: 15px 15px 30px;
+        border: 2px solid darkgreen;
+        padding: 20px;
+        width: 200px;
+        height: 100px;
+      }
+
+      #rcorners3 {
+        border-radius: 15px 50px;
+        border: 2px solid darkgreen;
+        padding: 20px;
+        width: 200px;
+        height: 100px;
+      }
+
+      #rcorners4 {
+        border-radius: 50%;
+        border: 2px solid darkgreen;
+        padding: 20px;
+        width: 200px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+    <div class="flex_item">
+      <p id="rcorners1"></p>
+      <p id="rcorners2"></p>
+      <p id="rcorners3"></p>
+    </div>
+    <div class="flex_item">
+      <p id="rcorners4"></p>
+    </div>
+  </body>
+</html>

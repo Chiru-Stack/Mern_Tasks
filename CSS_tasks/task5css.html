@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Styled Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #d8da3d;
+      padding: 1em 0;
+      text-align: center;
+    }
+    ul.navbar {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 8em;
+      left: 1em;
+      width: 9em;
+    }
+    ul.navbar li {
+      background: lightskyblue;
+      margin: 0.5em 0;
+      padding: 0.5em;
+      border-bottom: 1px solid #ddd;
+    }
+    ul.navbar a {
+      text-decoration: none;
+      color: black;
+      display: block;
+    }
+    ul.navbar a:hover {
+      background-color: lightgray;
+    }
+    .content {
+      margin: 0 12em;
+      padding: 2em;
+      background-color: lightsteelblue;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-family: Helvetica, Arial, sans-serif;
+      color: #555;
+    }
+    p {
+      line-height: 1.6;
+    }
+    address {
+      margin-top: 1em;
+      padding-top: 1em;
+      border-top: 1px dotted #ccc;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My First Styled Page</h1>
+  </header>
+
+  <!-- Site navigation menu -->
+  <ul class="navbar">
+    <li><a href="index.html">Home page</a></li>
+    <li><a href="musings.html">Musings</a></li>
+    <li><a href="town.html">My town</a></li>
+    <li><a href="links.html">Links</a></li>
+  </ul>
+
+  <!-- Main content -->
+  <div class="content">
+    <p>Welcome to my styled page!</p>
+
+    <p>
+      It lacks images, but at least it has style. And it has links, even if they
+      don't go anywhere&hellip;
+    </p>
+
+    <p>
+      There should be more here, but I don't know what yet.
+    </p>
+
+    <!-- Sign and date the page, it's only polite! -->
+    <address>
+      Made 5 April 2004<br />
+      by myself.
+    </address>
+  </div>
+</body>
+</html>
