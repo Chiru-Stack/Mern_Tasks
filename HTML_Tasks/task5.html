@@ -1,355 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Form</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        width: 80%;
-        max-width: 600px;
-        margin: 20px auto;
-        border: 1px solid #ddd;
-      }
-      h1 {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      .field-group {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-      }
-      .field-label {
-        flex: 1;
-        font-weight: bold;
-      }
-      .field-input {
-        flex: 2;
-      }
-      .radio-group {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-      }
-      .radio-label {
-        margin-right: 10px;
-      }
-      .checkbox-group {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-      }
-      .checkbox-label {
-        display: flex;
-        align-items: center;
-        margin-right: 10px;
-        cursor: pointer;
-      }
-      .checkbox-label input[type="checkbox"] {
-        margin-right: 5px;
-      }
-      input[type="text"],
-      input[type="password"],
-      input[type="number"],
-      input[type="tel"],
-      select {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-      input[type="date"] {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-      input[type="radio"] {
-        margin-right: 5px;
-      }
-      label[for="agree"] {
-        margin-top: 10px;
-        text-align: left;
-      }
-      a {
-        margin-left: 5px;
-      }
-      button[type="submit"] {
-        background-color: #3498db;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        margin: 0 auto;
-        display: block;
-      }
-      button[type="submit"]:hover {
-        background-color: #2980b9;
-      }
-      .signin {
-        text-align: center;
-        margin-top: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <form action="action_page.php">
-      <div class="container">
-        <h1>Registration Form</h1>
-        <!-- First Name -->
-        <div class="field-group">
-          <label for="fname" class="field-label">First Name</label>
-          <div class="field-input">
-            <input
-              type="text"
-              placeholder="Enter First Name"
-              name="fname"
-              id="fname"
-              required
-            />
-          </div>
-        </div>
-        <!-- Last Name -->
-        <div class="field-group">
-          <label for="lname" class="field-label">Last Name</label>
-          <div class="field-input">
-            <input
-              type="text"
-              placeholder="Enter Last Name"
-              name="lname"
-              id="lname"
-            />
-          </div>
-        </div>
-        <!-- Email -->
-        <div class="field-group">
-          <label for="email" class="field-label">Email</label>
-          <div class="field-input">
-            <input
-              type="text"
-              placeholder="Enter Email"
-              name="email"
-              id="email"
-              required
-            />
-          </div>
-        </div>
-        <!-- Password -->
-        <div class="field-group">
-          <label for="psw" class="field-label">Password</label>
-          <div class="field-input">
-            <input
-              type="password"
-              placeholder="Enter Password"
-              name="psw"
-              id="psw"
-              required
-            />
-          </div>
-        </div>
-        <!-- Re-enter Password -->
-        <div class="field-group">
-          <label for="psw-repeat" class="field-label">Re-enter Password</label>
-          <div class="field-input">
-            <input
-              type="password"
-              placeholder="Re-enter Password"
-              name="psw-repeat"
-              id="psw-repeat"
-              required
-            />
-          </div>
-        </div>
-        <!-- Date of Birth -->
-        <div class="field-group">
-          <label for="dob" class="field-label">Date of Birth</label>
-          <div class="field-input">
-            <input type="date" name="dob" id="dob" required />
-          </div>
-        </div>
-        <!-- Gender -->
-        <div class="radio-group">
-          <label for="gender" class="field-label">Gender</label>
-          <div class="field-input">
-            <input type="radio" name="gender" id="male" value="male" />
-            <span class="radio-label">Male</span>
-            <input type="radio" name="gender" id="female" value="female" />
-            <span class="radio-label">Female</span>
-          </div>
-        </div>
-        <!-- Age -->
-        <div class="field-group">
-          <label for="age" class="field-label">Age</label>
-          <div class="field-input">
-            <input
-              type="number"
-              placeholder="Enter Age"
-              name="age"
-              id="age"
-              required
-            />
-          </div>
-        </div>
-        <!-- Phone Number -->
-        <div class="field-group">
-          <label for="phonenumber" class="field-label">Phone Number</label>
-          <div class="field-input">
-            <input
-              type="tel"
-              placeholder="Enter Phone Number"
-              name="phonenumber"
-              id="phonenumber"
-              required
-            />
-          </div>
-        </div>
-        <!-- Address -->
-        <div class="field-group">
-          <label for="address" class="field-label">Address</label>
-          <div class="field-input">
-            <input
-              type="text"
-              placeholder="Enter Address"
-              name="address"
-              id="address"
-              required
-            />
-          </div>
-        </div>
-        <!-- City -->
-        <div class="field-group">
-          <label for="city" class="field-label">City</label>
-          <div class="field-input">
-            <input
-              type="text"
-              placeholder="Enter City"
-              name="city"
-              id="city"
-              required
-            />
-          </div>
-        </div>
-        <!-- State -->
-        <div class="field-group">
-          <label for="state" class="field-label">State</label>
-          <div class="field-input">
-            <input
-              type="text"
-              placeholder="Enter State"
-              name="state"
-              id="state"
-              required
-            />
-          </div>
-        </div>
-        <!-- Country -->
-        <div class="field-group">
-          <label for="country" class="field-label">Country</label>
-          <div class="field-input">
-            <select name="country" id="country">
-              <option value="india">India</option>
-              <option value="usa">USA</option>
-              <option value="uk">UK</option>
-              <option value="australia">Australia</option>
-            </select>
-          </div>
-        </div>
-        <!-- Pincode -->
-        <div class="field-group">
-          <label for="pincode" class="field-label">Pincode</label>
-          <div class="field-input">
-            <input
-              type="number"
-              placeholder="Enter Pincode"
-              name="pincode"
-              id="pincode"
-              required
-            />
-          </div>
-        </div>
-        <!-- Languages Known -->
-        <div class="field-group">
-          <label for="languages" class="field-label">Languages Known</label>
-          <div class="field-input">
-            <div class="checkbox-group">
-              <label for="english" class="checkbox-label">
-                <input
-                  type="checkbox"
-                  name="languages"
-                  id="english"
-                  value="english"
-                />
-                English
-              </label>
-              <label for="hindi" class="checkbox-label">
-                <input
-                  type="checkbox"
-                  name="languages"
-                  id="hindi"
-                  value="hindi"
-                />
-                Hindi
-              </label>
-              <label for="telugu" class="checkbox-label">
-                <input
-                  type="checkbox"
-                  name="languages"
-                  id="telugu"
-                  value="telugu"
-                />
-                Telugu
-              </label>
-              <label for="tamil" class="checkbox-label">
-                <input
-                  type="checkbox"
-                  name="languages"
-                  id="tamil"
-                  value="tamil"
-                />
-                Tamil
-              </label>
-              <label for="kannada" class="checkbox-label">
-                <input
-                  type="checkbox"
-                  name="languages"
-                  id="kannada"
-                  value="kannada"
-                />
-                Kannada
-              </label>
-            </div>
-          </div>
-        </div>
-        <!-- Agree to Terms and Conditions -->
-        <div class="checkbox-group">
-          <label for="agree">
-            <input type="checkbox" name="agree" id="agree" value="agree" />
-            Agree to <a href="#">Terms and Conditions</a>
-          </label>
-        </div>
-        <!-- Submit Button -->
-        <div class="field-group">
-          <button type="submit" class="registerbtn">Register</button>
-        </div>
-      </div>
-      <!-- Sign In -->
-      <div class="container signin">
-        <p>Already have an account? <a href="./../CSS-Tasks/cssTask6.html">Sign in</a>.</p>
-      </div>
-    </form>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <body>
+        <h2>Registrstion Form</h2>
+        <table border="1">
+            <tr>
+                <td>Full Name:</td>
+                <td>
+                    <input type="text" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type="text" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>Re-enter Password:</td>
+                <td>
+                    <input type="password" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <label for="Male">
+                        <input type="radio" value="Male" Name="" id="Male">Male
+                    </label><br>
+                    <label for="Female">
+                        <input type="radio" value="Female" Name="" id="Female">Female
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>
+                    <input type="text" name="">                 
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <textarea input="" value="" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td>
+                    <input typr="text" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select class="form-control-input" name="country" required>
+                        <option value="Select" selected>Select</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Bermuda">Bermuda</option>
+                  
+                        <option value="Iceland">Iceland</option>
+                        <option value="India">India</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Language:</td>
+                <td>
+                    <label for="English">
+                        <input type="checkbox" value="English" Name="" id="English">English
+                    </label>
+                    <label for="Kanada">
+                        <input type="checkbox" value="Kanada" Name="" id="Kanada">Kanada
+                    </label>
+                    <label for="Hindi">
+                        <input type="checkbox" value="Hindi" Name="" id="Hindi">Hindi
+                    </label>
+                    <label for="Telugu">
+                        <input type="checkbox" value="Telugu" Name="" id="Telugu">Telugu
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Declare">
+                        <input type="checkbox" value="Hereby I declare all the given details are true" Name="" id="Hereby I declare all the given details are true">Hereby I declare all the given details are true
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <pre> Log in to ETHNUS</pre>
+                </td>
+            </tr>
+            <tr>
+                <td align="Center" colspan="2">
+                    <form>
+                        <input type="submit" value="Register">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</body>
+</div>
+</body>
 </html>
